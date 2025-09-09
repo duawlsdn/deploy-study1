@@ -36,6 +36,6 @@ jobs:
         run: |
           cd web
           npm install
-          npm run dev
+          npm run build
           docker build -t ${{ secrets.DOCKER_USERNAME }}/react-app:latest .
           docker push ${{ secrets.DOCKER_USERNAME }}/react-app:latest
